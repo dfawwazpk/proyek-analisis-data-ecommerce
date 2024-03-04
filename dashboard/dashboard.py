@@ -13,7 +13,8 @@ min_date = pd.to_datetime(order_data['order_approved_at']).min()
 max_date = pd.to_datetime(order_data['order_approved_at']).max()
 
 with st.sidebar:
-    st.image("https://seeklogo.com/images/O/olist-logo-9DCE4443F8-seeklogo.com.png")
+    st.markdown('Dataset from: [Olist E-Commerce Public Dataset](https://www.kaggle.com/olistbr/brazilian-ecommerce)')
+    st.image("https://d3hw41hpah8tvx.cloudfront.net/images/logo_olist_d7309b5f20.png")
 
     start_date, end_date = st.date_input(
         label='Pilih rentang waktu',min_value=min_date,
@@ -60,6 +61,13 @@ order_review_data = pd.merge(
 order_review_data = order_review_data.groupby(['review_score', 'is_ontime']).size().reset_index(name='count')
 
 st.header('Proyek Analisis Data: E-Commerce Public Dataset')
+
+st.markdown('''
+            - **Nama:** Dimas Fawwaz Prabowo Kusumaji
+            - **Email:** dfawwazpk@outlook.com
+            - **ID Dicoding:** dfawwazpk
+            - **Study Group:** ML-60
+            ''')
 
 st.subheader(f'Tren Penjualan dari {start_date} hingga {end_date}')
 
