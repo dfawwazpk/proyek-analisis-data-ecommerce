@@ -2,10 +2,10 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
-order_item_data = pd.read_csv('../data/olist_order_items_dataset.csv')
-order_review_data = pd.read_csv('../data/olist_order_reviews_dataset.csv')
-order_data = pd.read_csv('./order_data_cleaned.csv')
-product_data = pd.read_csv('./product_data_cleaned.csv')
+order_item_data = pd.read_csv('https://raw.githubusercontent.com/dfawwazpk/proyek-analisis-data-ecommerce/main/data/olist_order_items_dataset.csv')
+order_review_data = pd.read_csv('https://raw.githubusercontent.com/dfawwazpk/proyek-analisis-data-ecommerce/main/data/olist_order_reviews_dataset.csv')
+order_data = pd.read_csv('https://raw.githubusercontent.com/dfawwazpk/proyek-analisis-data-ecommerce/main/dashboard/order_data_cleaned.csv')
+product_data = pd.read_csv('https://raw.githubusercontent.com/dfawwazpk/proyek-analisis-data-ecommerce/main/dashboard/product_data_cleaned.csv')
 
 
 

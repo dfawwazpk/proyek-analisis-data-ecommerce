@@ -5,13 +5,13 @@
 - **Study Group:** ML-60
 
 ## Dashboard
-Halaman dashboard yang sudah jadi dapat dikunjungi di 
+Halaman dashboard yang sudah jadi dapat dikunjungi di [sini](https://dfawwazpk.streamlit.app/)
 
 ## Instalasi (Lokal)
 Berikut langkah-langkah untuk menjalankan Streamlit secara lokal:
 1. Clone repository ini menggunakan
     ```shell
-    git clone ""
+    git clone "https://github.com/dfawwazpk/proyek-analisis-data-ecommerce.git"
     ```
 2. Masuk ke folder repository dan install requirements menggunakan
     ```shell
@@ -21,5 +21,5 @@ Berikut langkah-langkah untuk menjalankan Streamlit secara lokal:
 3. Masuk ke folder dashboard dan jalankan server Streamlit menggunakan
     ```shell
     cd dashboard
-    streamlit run ./dashboard/dashboard.py
+    streamlit run dashboard.py
     ```
